@@ -1,0 +1,68 @@
+:root{
+	--pcolor: #1dab94;
+	--scolor: #FF5C00; /* ff715b */
+	--tcolor: #444b54;
+	--hcolor: #666666;
+	--dcolor: #168875;
+	--qcolor: #FFD500;
+	--fsn: 0.9rem;
+	--fsp: 1.125rem;
+	--fsh1: 2.2rem;
+	--fsh2: 1.8rem;
+	--fsh3: 1.6rem;
+	--fsh4: 1.2rem;
+}
+*:not(i) {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box !important;
+}
+ul{
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+figure{
+	margin: 0;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+}
+#flow, body, html {
+	height: 100%;
+}
+#flow{
+	width: 100%;
+}
+html {
+	position: relative;
+}
+body {
+	margin: 0;
+	overflow: auto;
+}
+#flow {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.pulsar {
+	animation-name: pulse;
+	-webkit-animation-name: pulse;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+@keyframes pulse{
+0%,100%{transform:scale(.95);opacity:.95;}
+50%{transform:scale(1);opacity:1;}
+}
+@-webkit-keyframes pulse{
+0%,100%{-webkit-transform:scale(.95);opacity:.85}
+50%{-webkit-transform:scale(1);opacity:1}
+}
